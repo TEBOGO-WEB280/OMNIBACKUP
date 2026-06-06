@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>OMNIBACKUP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Welcome Screen -->
+    <div id="welcome-screen">
+
+        <div class="logo">
+            O
+        </div>
+
+        <h1>OMNIBACKUP</h1>
+
+        <p>
+            Your Devices. Your Data. Your Control.
+            <br>
+            Protecting what matters most.
+        </p>
+
+        <div class="features">
+
+            <div class="card">
+                📱
+                <h3>Device Backup</h3>
+                <p>Store important device information safely.</p>
+            </div>
+
+            <div class="card">
+                🔒
+                <h3>Security Check</h3>
+                <p>Keep your devices protected and secure.</p>
+            </div>
+
+            <div class="card">
+                🚨
+                <h3>Theft Support</h3>
+                <p>Know what to do immediately after a theft.</p>
+            </div>
+
+        </div>
+
+        <button id="startBtn">Get Started</button>
+
+    </div>
+
+    <!-- Dashboard Screen -->
+    <div id="home-screen" style="display:none;">
+
+        <div class="dashboard-header">
+            <h2>Welcome Back 👋</h2>
+            <p>Your Devices. Your Data. Your Control.</p>
+        </div>
+
+        <h1>OMNIBACKUP Dashboard</h1>
+
+        <div class="stats-container">
+
+    <div class="stats-card">
+        <h2 id="totalDevices">0</h2>
+        <p>Total Devices</p>
+    </div>
+
+    <div class="stats-card">
+        <h2 id="reportsGenerated">0</h2>
+        <p>Reports Generated</p>
+    </div>
+
+</div>
+
+        <div class="dashboard-grid">
+
+            <div class="dashboard-card" id="devicesBtn">
+                📱
+                <h3>My Devices</h3>
+                <p>Manage your devices</p>
+            </div>
+
+            <div class="dashboard-card">
+                🔒
+                <h3>Security Check</h3>
+                <p>Check device protection</p>
+            </div>
+
+            <div class="dashboard-card" id="stolenBtn">
+    🚨
+    <h3>Device Stolen?</h3>
+    <p>Emergency actions</p>
+</div>
+
+            <div class="dashboard-card">
+                ⚙️
+                <h3>Settings</h3>
+                <p>Customize your app</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Devices Screen -->
+    <div id="devices-screen" style="display:none;">
+
+        <h1>My Devices</h1>
+
+        <button id="backToDashboard1">⬅ Back to Dashboard</button>
+<br><br>
+
+        <input id="deviceName" type="text" placeholder="Device Name">
+        <br><br>
+
+        <input id="brand" type="text" placeholder="Brand">
+        <br><br>
+
+        <input id="model" type="text" placeholder="Model">
+        <br><br>
+
+        <input id="imei" type="text" placeholder="IMEI Number">
+        <br><br>
+
+        <input id="serial" type="text" placeholder="Serial Number">
+        <br><br>
+
+        <input id="purchaseDate" type="date">
+        <br><br>
+
+        <button id="saveBtn">Save Device</button>
+
+        <h2>Saved Devices</h2>
+
+       <input
+    id="searchDevice"
+    type="text"
+    placeholder="Search devices..."
+>
+
+<br><br> 
+
+        <div id="deviceList"></div>
+
+    </div>
+    <div id="stolen-screen" style="display:none;">
+
+    <h1>🚨 Stolen Device Report</h1>
+
+    <button id="backToDashboard2">⬅ Back to Dashboard</button>
+<br><br>
+
+    <div id="stolenDeviceInfo"></div>
+
+    <label for="deviceSelect"><strong>Select Stolen Device:</strong></label>
+<br><br>
+
+<select id="deviceSelect">
+</select>
+
+<br><br>
+
+<button id="loadDeviceBtn">Load Device</button>
+
+<br><br>
+
+<button id="generateReportBtn">
+    📄 Generate Theft Report
+</button>
+
+<br><br>
+
+<div id="reportArea"></div>
+
+<br><br>
+
+<button id="printReportBtn">
+    🖨️ Print Report
+</button>
+
+<br><br>
+
+    <p>
+        If your device has been stolen, follow these steps immediately:
+    </p>
+
+    <div class="saved-device">
+
+        <h3>Emergency Checklist</h3>
+
+        <p>✓ Report the theft to the police</p>
+
+        <p>✓ Contact your network provider</p>
+
+        <p>✓ Block your SIM card</p>
+
+        <p>✓ Keep your case number safe</p>
+
+        <p>✓ Record your IMEI number</p>
+
+    </div>
+
+</div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
