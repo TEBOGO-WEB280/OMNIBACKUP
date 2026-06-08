@@ -7,61 +7,90 @@
 <body>
 
     <!-- Welcome Screen -->
-    <div id="welcome-screen">
+   <div id="welcome-screen">
 
-        <div class="logo">
-            O
+    <div class="hero-section">
+
+        <div class="premium-logo">
+            🛡️
         </div>
 
-        <h1>OMNIBACKUP</h1>
+        <h1 class="hero-title">OMNIBACKUP</h1>
 
-        <p>
+        <p class="hero-subtitle">
             Your Devices. Your Data. Your Control.
-            <br>
-            Protecting what matters most.
         </p>
 
-        <div class="features">
+        <p class="hero-description">
+            Secure device records, theft recovery reports,
+            proof of ownership and digital protection —
+            all in one powerful platform.
+        </p>
 
-            <div class="card">
-                📱
-                <h3>Device Backup</h3>
-                <p>Store important device information safely.</p>
-            </div>
-
-            <div class="card">
-                🔒
-                <h3>Security Check</h3>
-                <p>Keep your devices protected and secure.</p>
-            </div>
-
-            <div class="card">
-                🚨
-                <h3>Theft Support</h3>
-                <p>Know what to do immediately after a theft.</p>
-            </div>
-
-        </div>
-
-        <button id="startBtn">Get Started</button>
+        <button id="startBtn" class="premium-btn">
+    Get Started →
+</button>
 
     </div>
+
+    <div class="premium-features">
+
+        <div class="premium-card">
+            <div class="feature-icon">📱</div>
+            <h3>Device Vault</h3>
+            <p>
+                Store IMEI numbers, serial numbers,
+                receipts and ownership records.
+            </p>
+        </div>
+
+        <div class="premium-card">
+            <div class="feature-icon">🛡️</div>
+            <h3>Security Intelligence</h3>
+            <p>
+                Monitor security scores and identify
+                missing protection details.
+            </p>
+        </div>
+
+        <div class="premium-card">
+            <div class="feature-icon">🚨</div>
+            <h3>Theft Recovery</h3>
+            <p>
+                Generate professional theft reports
+                within seconds.
+            </p>
+        </div>
+
+    </div>
+
+</div>
 
     <!-- Dashboard Screen -->
     <div id="home-screen" style="display:none;">
 
-        <div class="dashboard-header">
-            <h2>Welcome Back 👋</h2>
-            <p>Your Devices. Your Data. Your Control.</p>
-        </div>
+        <div class="dashboard-hero">
 
-        <h1>OMNIBACKUP Dashboard</h1>
+    <div>
+        <h1>🛡️ OMNIBACKUP</h1>
 
-        <div class="stats-container">
+        <p>
+            Secure your devices, generate theft reports,
+            and manage ownership records from one place.
+        </p>
+    </div>
+
+    <button id="quickAddBtn">
+        + Add Device
+    </button>
+
+</div>
+
+<div class="stats-container">
 
     <div class="stats-card">
         <h2 id="totalDevices">0</h2>
-        <p>Total Devices</p>
+        <p>Devices Protected</p>
     </div>
 
     <div class="stats-card">
@@ -69,40 +98,90 @@
         <p>Reports Generated</p>
     </div>
 
+    <div class="stats-card">
+        <h2>100%</h2>
+        <p>System Status</p>
+    </div>
+
 </div>
 
-        <div class="dashboard-grid">
+<div class="activity-card">
 
-            <div class="dashboard-card" id="devicesBtn">
-                📱
-                <h3>My Devices</h3>
-                <p>Manage your devices</p>
-            </div>
+    <h2>📋 Recent Activity</h2>
 
-            <div class="dashboard-card">
-                🔒
-                <h3>Security Check</h3>
-                <p>Check device protection</p>
-            </div>
+    <div id="activityLog">
 
-            <div class="dashboard-card" id="stolenBtn">
-    🚨
-    <h3>Device Stolen?</h3>
-    <p>Emergency actions</p>
-</div>
-
-            <div class="dashboard-card">
-                ⚙️
-                <h3>Settings</h3>
-                <p>Customize your app</p>
-            </div>
-
-        </div>
+        <p>Welcome to OMNIBACKUP</p>
 
     </div>
 
-    <!-- Devices Screen -->
-    <div id="devices-screen" style="display:none;">
+</div>
+
+        <div class="dashboard-grid">
+  
+
+         <div class="dashboard-card" id="devicesBtn">
+
+    <div class="icon-box blue">
+        📱
+    </div>
+
+    <h3>My Devices</h3>
+
+    <p>
+        Add, edit and manage all your devices.
+    </p>
+
+</div>
+
+<div class="dashboard-card" id="stolenBtn">
+
+    <div class="icon-box red">
+        🚨
+    </div>
+
+    <h3>Theft Center</h3>
+
+    <p>
+        Generate theft reports instantly.
+    </p>
+
+</div>
+
+<div class="dashboard-card">
+
+    <div class="icon-box green">
+        🛡️
+    </div>
+
+    <h3>Security Check</h3>
+
+    <p>
+        Review protection and ownership data.
+    </p>
+
+</div>
+
+<div class="dashboard-card">
+
+    <div class="icon-box gold">
+        ⚙️
+    </div>
+
+    <h3>Settings</h3>
+
+    <p>
+        Customize your OMNIBACKUP experience.
+    </p>
+
+</div>
+
+</div> <!-- dashboard-grid -->
+
+</div> <!-- home-screen -->
+
+<!-- Devices Screen -->
+<div id="devices-screen" style="display:none;">
 
         <h1>My Devices</h1>
 
@@ -125,11 +204,32 @@
         <br><br>
 
         <input id="purchaseDate" type="date">
+
         <br><br>
+
+<input id="lastSeenLocation" type="text" placeholder="Last Seen Location">
+
+<br><br>
+
+<br><br>
+
+<label>Device Photo:</label>
+<br>
+
+<input id="devicePhoto" type="file" accept="image/*">
+
+        <br><br>
+    
 
         <button id="saveBtn">Save Device</button>
 
         <h2>Saved Devices</h2>
+
+        <button id="exportBtn">
+    📄 Export My Devices
+</button>
+
+<br><br>
 
        <input
     id="searchDevice"
@@ -206,6 +306,12 @@
 </footer>
 
 <script src="script.js"></script>
+
+<div id="printArea" style="display:none;">
+    <h1>OMNIBACKUP Device Report</h1>
+    <p id="reportDate"></p>
+    <div id="reportDevices"></div>
+</div>
 
 </body>
 </html>

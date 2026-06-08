@@ -33,24 +33,19 @@ button:hover {
     background-color: #1d4ed8;
 }
 #welcome-screen {
-    background: white;
-    color: black;
-    width: 700px;
+    width: 100%;
+    max-width: 1200px;
     margin: auto;
-    padding: 50px;
-    border-radius: 25px;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
-    animation: fadeIn 1s ease;
-}
+    padding: 40px;
+    border-radius: 30px;
 
-#home-screen,
-#devices-screen {
-    background-color: white;
-    color: black;
-    width: 600px;
-    margin: auto;
-    padding: 30px;
-    border-radius: 20px;
+    background: rgba(255,255,255,0.05);
+
+    backdrop-filter: blur(20px);
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    color: white;
 }
 
 input {
@@ -248,12 +243,16 @@ h2 {
     color: #666;
 }
 .saved-device {
-    background: white;
-    color: black;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255,255,255,0.08);
+
+    color: white;
+
     padding: 20px;
     margin-top: 15px;
     border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+
     text-align: left;
 }
 
@@ -301,4 +300,809 @@ footer {
     text-align: center;
     color: #94a3b8;
     font-size: 14px;
+}
+
+.device-photo {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.score-badge {
+    display: inline-block;
+    background: #22c55e;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.hero {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.hero-text {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 20px auto;
+}
+
+.logo {
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+
+.card-icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.card {
+    width: 250px;
+    padding: 25px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+body {
+    background: linear-gradient(
+        135deg,
+        #0f172a,
+        #1e293b,
+        #0f172a
+    );
+}
+
+.hero-section {
+    text-align: center;
+    padding: 80px 20px 50px;
+}
+
+.premium-logo {
+    font-size: 90px;
+    margin-bottom: 15px;
+}
+
+.hero-title {
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.hero-subtitle {
+    font-size: 1.4rem;
+    color: #38bdf8;
+    margin-bottom: 15px;
+}
+
+.hero-description {
+    max-width: 700px;
+    margin: auto;
+    color: #cbd5e1;
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+.premium-btn {
+    margin-top: 30px;
+    padding: 16px 40px;
+    border: none;
+    border-radius: 14px;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.premium-btn:hover {
+    transform: scale(1.05);
+}
+
+.premium-features {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+
+.premium-card {
+    width: 300px;
+    padding: 30px;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255,255,255,0.1);
+    transition: 0.3s;
+}
+
+.premium-card:hover {
+    transform: translateY(-10px);
+}
+
+.feature-icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.premium-card h3 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.premium-card p {
+    color: #cbd5e1;
+    line-height: 1.6;
+}
+
+/* ===== APP BACKGROUND ===== */
+
+body {
+
+    background:
+    radial-gradient(circle at top left,
+    rgba(59,130,246,0.15),
+    transparent 30%),
+
+    radial-gradient(circle at top right,
+    rgba(147,51,234,0.15),
+    transparent 30%),
+
+    #07111f;
+
+    color: white;
+
+    font-family: Arial, sans-serif;
+
+    min-height: 100vh;
+}
+
+/* ===== DASHBOARD LAYOUT ===== */
+
+#home-screen {
+
+    display: none;
+
+    padding: 30px;
+
+    max-width: 1400px;
+
+    margin: auto;
+}
+
+#devices-screen,
+#stolen-screen {
+
+    display: none;
+
+    max-width: 1000px;
+
+    margin: auto;
+
+    padding: 30px;
+
+    color: white;
+}
+
+/* ===== HERO ===== */
+
+.dashboard-hero {
+
+    background: rgba(255,255,255,0.05);
+
+    backdrop-filter: blur(20px);
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    border-radius: 30px;
+
+    padding: 35px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 25px;
+}
+
+.dashboard-hero h1 {
+
+    font-size: 3rem;
+
+    margin-bottom: 10px;
+}
+
+.dashboard-hero p {
+
+    color: #cbd5e1;
+
+    max-width: 600px;
+}
+
+/* ===== BUTTON ===== */
+
+#quickAddBtn {
+
+    background: linear-gradient(
+        135deg,
+        #2563eb,
+        #4f46e5
+    );
+
+    color: white;
+
+    border: none;
+
+    padding: 15px 25px;
+
+    border-radius: 16px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+    font-size: 16px;
+}
+
+.dashboard-grid {
+
+    display: grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(300px,1fr));
+
+    gap: 20px;
+}
+
+.dashboard-card {
+
+    background: rgba(255,255,255,0.05);
+
+    backdrop-filter: blur(20px);
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    border-radius: 25px;
+
+    padding: 30px;
+
+    transition: 0.3s;
+
+    cursor: pointer;
+}
+
+.dashboard-card:hover {
+
+    transform: translateY(-6px);
+
+    background: rgba(255,255,255,0.08);
+}
+
+.icon-box {
+
+    width: 80px;
+
+    height: 80px;
+
+    border-radius: 20px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 35px;
+
+    margin-bottom: 20px;
+}
+
+.blue {
+    background: rgba(59,130,246,0.3);
+}
+
+.red {
+    background: rgba(239,68,68,0.3);
+}
+
+.green {
+    background: rgba(34,197,94,0.3);
+}
+
+.gold {
+    background: rgba(234,179,8,0.3);
+}
+
+/* ===== DEVICES SCREEN V2 ===== */
+
+#devices-screen,
+#stolen-screen {
+
+    max-width: 1200px;
+
+    margin: 30px auto;
+
+    padding: 30px;
+
+    background: rgba(255,255,255,0.05);
+
+    backdrop-filter: blur(20px);
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    border-radius: 30px;
+
+    color: white;
+}
+
+#devices-screen h1,
+#stolen-screen h1 {
+
+    color: white;
+
+    margin-bottom: 20px;
+}
+
+/* ===== PREMIUM FORM INPUTS ===== */
+
+input,
+select {
+
+    width: 100%;
+
+    max-width: 700px;
+
+    padding: 15px 18px;
+
+    background: rgba(255,255,255,0.06);
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    border-radius: 15px;
+
+    color: white;
+
+    font-size: 15px;
+
+    backdrop-filter: blur(10px);
+
+    box-sizing: border-box;
+}
+
+input::placeholder {
+
+    color: #94a3b8;
+}
+
+input:focus,
+select:focus {
+
+    outline: none;
+
+    border-color: #3b82f6;
+
+    box-shadow: 0 0 20px rgba(59,130,246,0.25);
+}
+
+label {
+
+    color: #cbd5e1;
+
+    font-weight: 600;
+}
+
+/* ===== SAVE DEVICE BUTTON ===== */
+
+#saveBtn {
+
+    background: linear-gradient(
+        135deg,
+        #2563eb,
+        #4f46e5
+    );
+
+    color: white;
+
+    border: none;
+
+    padding: 15px 30px;
+
+    border-radius: 16px;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    width: auto;
+
+    min-width: 220px;
+
+    box-shadow:
+    0 10px 25px rgba(37,99,235,0.25);
+
+    transition: all 0.3s ease;
+}
+
+#saveBtn:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow:
+    0 15px 35px rgba(37,99,235,0.35);
+}
+
+#saveBtn:active {
+
+    transform: translateY(0);
+}
+
+/* ===== EXPORT BUTTON ===== */
+
+#exportBtn {
+
+    background: linear-gradient(
+        135deg,
+        #10b981,
+        #059669
+    );
+
+    color: white;
+
+    border: none;
+
+    padding: 15px 30px;
+
+    border-radius: 16px;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    width: auto;
+
+    min-width: 220px;
+
+    box-shadow:
+    0 10px 25px rgba(16,185,129,0.25);
+
+    transition: all 0.3s ease;
+}
+
+#exportBtn:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow:
+    0 15px 35px rgba(16,185,129,0.35);
+}
+
+#exportBtn:active {
+
+    transform: translateY(0);
+}
+
+/* ===== BACK TO DASHBOARD BUTTONS ===== */
+
+#backToDashboard1,
+#backToDashboard2 {
+
+    background: rgba(255,255,255,0.08);
+
+    backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255,255,255,0.12);
+
+    color: white;
+
+    padding: 14px 24px;
+
+    border-radius: 16px;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    width: auto;
+
+    min-width: 220px;
+
+    transition: all 0.3s ease;
+}
+
+#backToDashboard1:hover,
+#backToDashboard2:hover {
+
+    background: rgba(255,255,255,0.12);
+
+    transform: translateY(-3px);
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,0.20);
+}
+
+#backToDashboard1:active,
+#backToDashboard2:active {
+
+    transform: translateY(0);
+}
+
+/* ===== GENERATE REPORT BUTTON ===== */
+
+#generateReportBtn {
+
+    background: linear-gradient(
+        135deg,
+        #f97316,
+        #ef4444
+    );
+
+    color: white;
+
+    border: none;
+
+    padding: 15px 30px;
+
+    border-radius: 16px;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    width: auto;
+
+    min-width: 260px;
+
+    box-shadow:
+    0 10px 25px rgba(239,68,68,0.25);
+
+    transition: all 0.3s ease;
+}
+
+#generateReportBtn:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow:
+    0 15px 35px rgba(239,68,68,0.35);
+}
+
+#generateReportBtn:active {
+
+    transform: translateY(0);
+}
+
+/* ===== PRINT REPORT BUTTON ===== */
+
+#printReportBtn {
+
+    background: linear-gradient(
+        135deg,
+        #7c3aed,
+        #9333ea
+    );
+
+    color: white;
+
+    border: none;
+
+    padding: 15px 30px;
+
+    border-radius: 16px;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    width: auto;
+
+    min-width: 260px;
+
+    box-shadow:
+    0 10px 25px rgba(124,58,237,0.25);
+
+    transition: all 0.3s ease;
+}
+
+#printReportBtn:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow:
+    0 15px 35px rgba(124,58,237,0.35);
+}
+
+#printReportBtn:active {
+
+    transform: translateY(0);
+}
+
+/* ===== PREMIUM DEVICE CARDS ===== */
+
+.saved-device {
+
+    background: rgba(255,255,255,0.05);
+
+    backdrop-filter: blur(20px);
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    border-radius: 24px;
+
+    padding: 25px;
+
+    margin-top: 20px;
+
+    color: white;
+
+    text-align: left;
+
+    transition: all 0.3s ease;
+}
+
+.saved-device:hover {
+
+    transform: translateY(-4px);
+
+    background: rgba(255,255,255,0.08);
+}
+
+.saved-device h3 {
+
+    color: white;
+
+    margin-bottom: 15px;
+}
+
+.saved-device p {
+
+    color: #cbd5e1;
+
+    margin: 8px 0;
+}
+
+/* ===== SECURITY SCORE BADGE ===== */
+
+.score-badge {
+
+    display: inline-block;
+
+    background: linear-gradient(
+        135deg,
+        #22c55e,
+        #16a34a
+    );
+
+    color: white;
+
+    padding: 8px 14px;
+
+    border-radius: 999px;
+
+    font-weight: bold;
+
+    margin-bottom: 15px;
+
+    box-shadow:
+    0 8px 20px rgba(34,197,94,0.25);
+}
+
+/* ===== DEVICE PHOTO ===== */
+
+.device-photo {
+
+    width: 180px;
+
+    height: 180px;
+
+    object-fit: cover;
+
+    border-radius: 18px;
+
+    margin-top: 15px;
+
+    border: 2px solid rgba(255,255,255,0.08);
+}
+
+/* ===== THEFT REPORT CARD ===== */
+
+#reportArea .saved-device {
+
+    background: rgba(239,68,68,0.08);
+
+    border: 1px solid rgba(239,68,68,0.25);
+
+    backdrop-filter: blur(20px);
+
+    border-radius: 24px;
+
+    padding: 30px;
+
+    margin-top: 20px;
+
+    box-shadow:
+    0 15px 35px rgba(239,68,68,0.15);
+}
+
+#reportArea h2 {
+
+    color: #f87171;
+
+    margin-bottom: 20px;
+
+    font-size: 28px;
+}
+
+#reportArea p {
+
+    color: #e2e8f0;
+}
+
+/* ===== RECENT ACTIVITY CARD ===== */
+
+.activity-card {
+
+    background: rgba(255,255,255,0.05);
+
+    backdrop-filter: blur(20px);
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    border-radius: 25px;
+
+    padding: 25px;
+
+    margin: 25px 0;
+
+    text-align: left;
+}
+
+.activity-card h2 {
+
+    color: white;
+
+    margin-bottom: 20px;
+}
+
+#activityLog p {
+
+    background: rgba(255,255,255,0.04);
+
+    border-radius: 12px;
+
+    padding: 12px 15px;
+
+    margin: 10px 0;
+
+    color: #cbd5e1;
 }
